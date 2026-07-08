@@ -157,7 +157,7 @@
         <a class="pill" href="assets/poster.pdf">🖼 Poster</a>
         <a class="pill" href="https://github.com/aguilarjose11/IntrinsicRobustness_ICML26">GitHub</a>
       </div>
-      <p class="tldr"><b>TL;DR.</b> We provide the first characterization to distinguish between <b>vulnerable<b> and <b>intrinsically<b> robust linear MDPs.</p>
+      <p class="tldr"><b>TL;DR.</b> We give a tight characterization that separates <b>vulnerable</b> linear MDPs, where reward poisoning can induce a target policy, from <b>intrinsically robust</b> ones, where any successful attack requires a large budget.</p>
     </header>
 
     <section class="behavior container" aria-label="HalfCheetah behavior overview">
@@ -176,7 +176,7 @@
         </figure>
         <figure class="behavior-card">
           <img src="assets/intrinsic-robustness.gif" alt="Intrinsic robustness: bounded-budget poisoning cannot induce the target behavior" loading="eager" />
-          <figcaption><span class="tag robust">Intrinsic robustness</span><b>Cannot attack.</b> However, Under specific circumstances, bounded-budget poisoning cannot induce the target behavior.</figcaption>
+          <figcaption><span class="tag robust">Intrinsic robustness</span><b>Cannot attack.</b> In intrinsically robust instances, bounded-budget poisoning cannot induce the target behavior.</figcaption>
         </figure>
       </div>
     </section>
@@ -225,7 +225,7 @@
 
     <section id="cqp">
       <div class="container">
-        <div class="section-title"><h2>CQP decides attackability.</h2><p>For a target policy <span class="math">π<sup>†</sup></span>, the CQP asks whether one can construct poisoned reward parameters that make the target action strictly optimal on the target-policy support.</p></div>
+        <div class="section-title"><h2>A single CQP decides attackability.</h2><p>For a target policy <span class="math">π<sup>†</sup></span>, the CQP asks whether one can construct poisoned reward parameters that make the target action strictly optimal on the target-policy support.</p></div>
         <div class="cqp-wrap">
           <div class="cqp-card">
             <div class="cqp-head"><b>CQP · Theorem 4.2</b></div>
@@ -271,8 +271,8 @@
           <div class="step"><span>3</span><p><b>Run poisoning attacks.</b> Compare white-box, black-box, and baseline AT attacks against LSVI-UCB.</p></div>
         </div>
         <div class="results-grid">
-          <figure class="plot"><img src="assets/attackable-HC-composite-full.png" alt="Policy difference and cumulative perturbation plots" /><figcaption>Policy difference and cumulative perturbation for white-box, black-box, and baseline attacks.</figcaption></figure>
-          <div class="plot-summary">In vulnerable instances, policy difference drops toward zero while cumulative perturbation flattens; in intrinsically robust instances, the policy gap persists and the required perturbation keeps growing.</div>
+          <figure class="plot"><img src="assets/attackable-HC-composite-full.png" alt="Policy difference and cumulative perturbation plots" /><figcaption>HalfCheetah results: policy difference and cumulative perturbation under white-box, black-box, and baseline attacks.</figcaption></figure>
+          <div class="plot-summary"><b>Key observation.</b> In vulnerable instances, policy difference drops toward zero while cumulative perturbation flattens; in intrinsically robust instances, the policy gap persists and the required perturbation keeps growing.</div>
         </div>
       </div>
     </section>
