@@ -194,7 +194,7 @@
     <section id="setup">
       <div class="container setup-grid">
         <div>
-          <div class="section-title" style="text-align:left;margin-bottom:16px"><h2>Reward feedback can be poisoned.</h2><p>RL learns by treating reward as the signal for which behaviors should be repeated.</p></div>
+          <div class="section-title" style="text-align:left;margin-bottom:16px"><h2>Reward can be poisoned.</h2><p>RL learns by treating reward as the signal for which behaviors should be repeated.</p></div>
           <div class="intuition-card">
             <h3>The intuition</h3>
             <p>A small reward edit at one step is not just a local mistake: it changes the next policy update, which changes future data, which changes later rewards and updates. Reward poisoning exploits this feedback loop to make the target policy look increasingly attractive.</p>
