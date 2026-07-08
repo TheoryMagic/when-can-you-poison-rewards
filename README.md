@@ -1,15 +1,24 @@
-# When Can You Poison Rewards? — Website v9
+# When Can You Poison Rewards? — website package v16
 
-This version removes the Technical visuals section and rewrites the CQP theorem display as one integrated mathematical program.
+This package keeps the supplied `index.html` unchanged and only updates the experiment figure asset.
+
+## What changed
+
+- Replaced `assets/attackable-HC-composite-full.png` with a new combined result figure generated from the uploaded attackable and intrinsically robust HalfCheetah PDFs.
+- Kept the current HTML structure and text unchanged.
+- Removed unused assets; the package only includes files referenced by `index.html`.
+- Kept the four multi-frame GIFs used by the behavior overview:
+  - `before-attack.gif`
+  - `target-policy.gif`
+  - `attack-success.gif`
+  - `intrinsic-robustness.gif`
 
 ## Upload to GitHub Pages
 
-Upload the contents of this folder, not the folder itself:
+Upload these items to the repository root:
 
-```text
-index.html
-README.md
-assets/
-```
+- `index.html`
+- `README.md`
+- `assets/`
 
-The page uses a single `index.html` with embedded CSS/JS. The `assets/` folder is still required for GIFs, images, PDFs, and social preview.
+For a clean update, delete the old `assets/` folder first, then upload this package's `assets/` folder.
