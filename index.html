@@ -37,24 +37,26 @@
     .brand{font-size:14px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .navlinks{display:flex;gap:20px;font-size:14px;color:var(--muted)}
     .navlinks a:hover{color:var(--teal)}
-
+​
     .hero{text-align:center;padding:70px 24px 30px}
     .venue{font-size:15px;font-weight:800;letter-spacing:.12em;color:var(--teal);text-transform:uppercase;margin-bottom:20px}
     h1{font-size:clamp(42px,7vw,72px);letter-spacing:-.045em;line-height:1.02;margin:0 0 14px;font-weight:760}
     .subtitle{font-size:clamp(22px,3vw,33px);line-height:1.18;margin:0 auto 22px;color:#3f3f46;max-width:980px;font-weight:400}
     .authors{font-size:19px;line-height:1.48;color:#41454d;max-width:980px;margin:0 auto 16px}
-    .affiliation{font-size:16px;color:var(--muted);margin-bottom:24px}
+    .affiliation{font-size:16px;color:var(--muted);margin-bottom:6px}
+    .authors sup,.affiliation sup{font-size:65%;line-height:0;vertical-align:super;margin-left:1px}
+    .equal-note{font-size:14px;color:var(--muted);margin:0 0 24px}
     .button-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}
     .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:#2b2b2b;color:#fff;padding:10px 18px;font-size:16px;font-weight:650;box-shadow:0 4px 10px rgba(0,0,0,.12);transition:.15s ease}
     .pill:hover{transform:translateY(-1px);background:#111}
     .tldr{max-width:880px;margin:30px auto 0;padding:18px 22px;border:1px solid var(--line);border-radius:16px;background:#fafafa;color:#444;font-size:18px;line-height:1.55}
     .tldr b{color:#222}
-
+​
     section{padding:52px 0;border-top:1px solid #eee}
     .section-title{text-align:center;margin-bottom:24px}
     .section-title h2{font-size:clamp(30px,4vw,42px);letter-spacing:-.035em;line-height:1.1;margin:0 0 9px;font-weight:740}
     .section-title p{font-size:17px;color:var(--muted);max-width:850px;margin:0 auto}
-
+​
     .behavior{padding-top:32px;border-top:0}
     .behavior-grid{max-width:980px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
     .behavior-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
@@ -65,10 +67,10 @@
     .tag.success{background:#eef7ee;color:var(--green)}
     .tag.robust{background:#fdeeee;color:var(--red)}
     .behavior-card b{display:block;color:#222;font-size:16px;margin-bottom:3px}
-
+​
     .abstract{max-width:900px;margin:0 auto;font-size:18px;color:#3d4148}
     .abstract p{margin:0 0 14px}.abstract strong{color:#222}
-
+​
     .setup-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center}
     .intuition-card{border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow);padding:20px 22px;margin-top:18px}
     .intuition-card h3{margin:0 0 8px;font-size:20px;letter-spacing:-.02em}
@@ -79,7 +81,7 @@
     .math{font-family:"Times New Roman",Times,serif;color:#111}
     .flow{border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow);padding:18px}
     .flow svg{width:100%;height:auto}.flow-note{font-size:14px;color:var(--muted);margin:9px 0 0;text-align:center}
-
+​
     .cqp-wrap{max-width:980px;margin:0 auto}
     .cqp-card{border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow);overflow:hidden}
     .cqp-head{display:flex;align-items:center;justify-content:flex-start;gap:12px;background:#fafafa;border-bottom:1px solid var(--line);padding:12px 16px;font-size:14px;color:var(--muted)}
@@ -98,7 +100,7 @@
     .sign-card{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fff;box-shadow:var(--shadow)}
     .sign{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:22px;font-weight:850;margin-bottom:6px}.pos{color:var(--teal)}.neg{color:var(--red)}
     .sign-card h3{margin:0 0 5px;font-size:21px}.sign-card p{margin:0;color:var(--muted);font-size:15.5px}
-
+​
     .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:22px}
     .step{display:grid;grid-template-columns:32px 1fr;gap:10px;border:1px solid var(--line);border-radius:13px;padding:14px;background:#fff}
     .step span{width:32px;height:32px;border-radius:999px;background:#222;color:white;display:grid;place-items:center;font-weight:700;font-size:14px}
@@ -108,7 +110,7 @@
     .plot img{width:100%;border-radius:10px;background:#f7f7f7}.plot figcaption{font-size:14px;color:var(--muted);margin:10px 4px 2px;line-height:1.45}
     .plot-summary{border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 18px;color:var(--muted);font-size:16px;line-height:1.55;box-shadow:var(--shadow)}
     .plot-summary b{color:#222}
-
+​
     .final-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
     .takeaways{display:grid;gap:10px}
     .takeaway{border:1px solid var(--line);border-radius:13px;background:#fff;padding:14px 16px}
@@ -120,7 +122,7 @@
     summary{cursor:pointer;font-weight:750;padding:12px 14px;color:#333}
     pre{margin:0;border-top:1px solid var(--line);padding:14px;overflow:auto;color:#4b4f56;font-size:12.5px;line-height:1.55;background:#f5f5f5;max-height:180px}
     footer{text-align:center;color:var(--muted);font-size:14px;padding:34px 0 48px;border-top:1px solid var(--line);background:#fafafa}
-
+​
     @media (max-width:860px){
       .behavior-grid,.setup-grid,.steps,.results-grid,.final-grid,.sign-grid,.intuition-points{grid-template-columns:1fr}
       .behavior-card img{aspect-ratio:16/8.5}
@@ -143,44 +145,45 @@
       <div class="navlinks"><a href="#abstract">Abstract</a><a href="#setup">Setup</a><a href="#cqp">CQP</a><a href="#results">Results</a><a href="#bibtex">BibTeX</a></div>
     </div>
   </nav>
-
+​
   <main id="top">
     <header class="hero container">
       <div class="venue">ICML 2026 · Seoul</div>
       <h1>When Can You Poison Rewards?</h1>
       <p class="subtitle">A Tight Characterization of Reward Poisoning in Linear MDPs</p>
-      <p class="authors">Jose E. Aguilar Escamilla, Haoyang Hong, Jiawei Li, Haoyu Zhao, Xuezhou Zhang, Sanghyun Hong, Huazheng Wang</p>
-      <p class="affiliation">Oregon State University · UIUC · Princeton University · Boston University</p>
+      <p class="authors">Jose E. Aguilar Escamilla<sup>*1</sup>, Haoyang Hong<sup>*1</sup>, Jiawei Li<sup>*2</sup>, Haoyu Zhao<sup>3</sup>, Xuezhou Zhang<sup>4</sup>, Sanghyun Hong<sup>1</sup>, Huazheng Wang<sup>1</sup></p>
+      <p class="affiliation"><sup>1</sup>Oregon State University · <sup>2</sup>University of Illinois Urbana-Champaign · <sup>3</sup>Princeton University · <sup>4</sup>Boston University</p>
+      <p class="equal-note"><sup>*</sup> Equal contribution</p>
       <div class="button-row">
-        <a class="pill" href="assets/paper.pdf">📄 Paper</a>
+        <a class="pill" href="https://arxiv.org/abs/2604.10062">📄 arXiv</a>
         <a class="pill" href="assets/presentation-slides.pdf">▶ Slides</a>
         <a class="pill" href="assets/poster.pdf">🖼 Poster</a>
         <a class="pill" href="https://github.com/aguilarjose11/IntrinsicRobustness_ICML26">GitHub</a>
       </div>
       <p class="tldr"><b>TL;DR.</b> We give a tight characterization that separates <b>vulnerable</b> linear MDPs, where reward poisoning can induce a target policy, from <b>intrinsically robust</b> ones, where any successful attack requires a large budget.</p>
     </header>
-
+​
     <section class="behavior container" aria-label="HalfCheetah behavior overview">
       <div class="behavior-grid">
         <figure class="behavior-card">
-          <img src="assets/before-attack.gif" alt="Before attack: nominal HalfCheetah behavior" loading="eager" />
-          <figcaption><span class="tag">Before attack</span><b>Nominal behavior.</b>The learner starts from the original task behavior before reward poisoning is applied.</figcaption>
+          <img src="assets/before-attack.gif" alt="Before attack: HalfCheetah moving forward under the normal policy" loading="eager" />
+          <figcaption><span class="tag">Before attack</span><b>Normal policy: moving forward.</b> HalfCheetah follows the nominal forward-running behavior before reward poisoning is applied.</figcaption>
         </figure>
         <figure class="behavior-card">
-          <img src="assets/target-policy.gif" alt="Target policy: backward-running HalfCheetah behavior" loading="eager" />
-          <figcaption><span class="tag target">Target policy</span><b>Backward-running target.</b>The attacker’s objective is to induce this target policy rather than the nominal behavior.</figcaption>
+          <img src="assets/target-policy.gif" alt="Target policy: HalfCheetah moving backward" loading="eager" />
+          <figcaption><span class="tag target">Target policy</span><b>Target policy: moving backward.</b> The attacker wants the learner to adopt backward locomotion instead of the normal forward policy.</figcaption>
         </figure>
         <figure class="behavior-card">
-          <img src="assets/attack-success.gif" alt="Attack success: HalfCheetah follows the target behavior" loading="eager" />
-          <figcaption><span class="tag success">Attack success</span><b>Vulnerable instance.</b> Reward poisoning can steer learning toward the target behavior.</figcaption>
+          <img src="assets/attack-success.gif" alt="Attack success: HalfCheetah moves backward after reward poisoning" loading="eager" />
+          <figcaption><span class="tag success">Attack success</span><b>Poisoning induces the target.</b> On vulnerable instances, the learned policy moves backward after reward poisoning.</figcaption>
         </figure>
         <figure class="behavior-card">
-          <img src="assets/intrinsic-robustness.gif" alt="Intrinsic robustness: bounded-budget poisoning cannot induce the target behavior" loading="eager" />
-          <figcaption><span class="tag robust">Intrinsic robustness</span><b>Cannot attack.</b> In intrinsically robust instances, bounded-budget poisoning cannot induce the target behavior.</figcaption>
+          <img src="assets/intrinsic-robustness.gif" alt="Intrinsic robustness: bounded-budget poisoning cannot induce the backward-moving target policy" loading="eager" />
+          <figcaption><span class="tag robust">Intrinsic robustness</span><b>Bounded attack fails.</b> On intrinsically robust instances, bounded-budget poisoning cannot induce the backward-moving target policy.</figcaption>
         </figure>
       </div>
     </section>
-
+​
     <section id="abstract">
       <div class="container">
         <div class="section-title"><h2>Abstract</h2></div>
@@ -190,7 +193,7 @@
         </div>
       </div>
     </section>
-
+​
     <section id="setup">
       <div class="container setup-grid">
         <div>
@@ -222,7 +225,7 @@
         </div>
       </div>
     </section>
-
+​
     <section id="cqp">
       <div class="container">
         <div class="section-title"><h2>A single CQP decides attackability.</h2><p>For a target policy <span class="math">π<sup>†</sup></span>, the CQP asks whether one can construct poisoned reward parameters that make the target action strictly optimal on the target-policy support.</p></div>
@@ -261,7 +264,7 @@
         </div>
       </div>
     </section>
-
+​
     <section id="results">
       <div class="container">
         <div class="section-title"><h2>Empirical evidence</h2><p>The experiments compare CQP predictions against actual poisoning outcomes in learned linear representations of deep-RL benchmarks.</p></div>
@@ -276,7 +279,7 @@
         </div>
       </div>
     </section>
-
+​
     <section id="bibtex">
       <div class="container final-grid">
         <div>
@@ -289,8 +292,8 @@
         </div>
         <div class="resource-card">
           <h2>Resources</h2>
-          <p>Paper, slides, poster, code, and citation.</p>
-          <div class="resource-buttons"><a class="pill" href="assets/paper.pdf">Paper PDF</a><a class="pill" href="assets/presentation-slides.pdf">Slides PDF</a><a class="pill" href="assets/poster.pdf">Poster PDF</a><a class="pill" href="https://github.com/aguilarjose11/IntrinsicRobustness_ICML26">Code</a></div>
+          <p>arXiv, slides, poster, code, and citation.</p>
+          <div class="resource-buttons"><a class="pill" href="https://arxiv.org/abs/2604.10062">arXiv</a><a class="pill" href="assets/presentation-slides.pdf">Slides PDF</a><a class="pill" href="assets/poster.pdf">Poster PDF</a><a class="pill" href="https://github.com/aguilarjose11/IntrinsicRobustness_ICML26">Code</a></div>
           <details>
             <summary>BibTeX</summary>
             <pre><code>@inproceedings{aguilar2026poisonrewards,
@@ -304,5 +307,6 @@
       </div>
     </section>
   </main>
+  <footer>Website template inspired by clean academic project pages. Last updated for ICML 2026.</footer>
 </body>
 </html>
